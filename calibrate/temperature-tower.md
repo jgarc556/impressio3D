@@ -2,7 +2,7 @@
 
 Conjunt de test o passos per aconseguir calibrar correctament una impressora 3D.
 
-[filename](calibrate/temperature-tower.md ':include')
+
 <h2 id="torre-de-temperatura">Torre de temperatura</h2>
 
 
