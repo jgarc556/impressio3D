@@ -1,13 +1,4 @@
-<h2>Calibrar una impressora 3D	</h2>
-
-
-<p>(Impressores 3D)
-
-
-[TOC]
-
-
-<h2 id="enunciat">Enunciat</h2>
+<h1>Calibrar una impressora 3D</h1>
 
 
 Conjunt de test o passos per aconseguir calibrar correctament una impressora 3D.
@@ -68,10 +59,9 @@ S’usa aquest filament per la prova de torre de temperatura:
    </td>
    <td>
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-<img src="images/image1.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="calibrate/images/image3.jpg" width="25%" alt="alt_text" title="image_tooltip">
 
    </td>
   </tr>
@@ -100,8 +90,6 @@ El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajus
 
 Pas 1: Afegim el model de la torre i ajustem els paràmetres (veure 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "configuració"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 [configuració](#heading=h.mumsqpljsap7)).
 
 Pas 2: Seguidament fem _Laminar_.
@@ -112,30 +100,23 @@ Ens posicionem en la capa de canvi de bloc, per exemple, en la imatge següent e
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](calibrate/images/image1.png "image_tooltip")
 
 
 Introduim el gcode **_M104 S200_**, per indicar que la temperatura serà de 200 ºC.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](calibrate/images/image2.png "image_tooltip")
 
 
 Finalment, obtenim el canvi de totes les temperatures.
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](calibrate/images/image5.png "image_tooltip")
 
 
 Només queda fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
@@ -167,16 +148,12 @@ Un cop analitzades les imatges de la impressió, el rang amb menys problemes sem
 
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+![alt_text](calibrate/images/image4.jpg "image_tooltip")
 
 
-![alt_text](images/image5.jpg "image_tooltip")
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.jpg "image_tooltip")
+![alt_text](calibrate/images/image6.jpg "image_tooltip")
 
 
 
@@ -244,7 +221,7 @@ S’usa aquest filament per la prova de torre de temperatura:
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-<img src="images/image7.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="calibrate/images/image7.jpg" width="" alt="alt_text" title="image_tooltip">
 
    </td>
   </tr>
