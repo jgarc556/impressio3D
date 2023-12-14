@@ -1,6 +1,6 @@
 # Torre de temperatura
 
-Test de calibració de la temperatura òpitma d'impressió.
+Test de calibració de la temperatura òpitma d'impressió.  
 S'empra un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
 
 ```
