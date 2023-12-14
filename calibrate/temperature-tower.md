@@ -1,35 +1,23 @@
-# Calibrar una impressora 3D
+# Torre de temperatura
 
-Conjunt de test o passos per aconseguir calibrar correctament una impressora 3D.
-
-
-<h2 id="torre-de-temperatura">Torre de temperatura</h2>
-
-
-<h3>Descripció</h3>
-
-
-Impressió d’un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
-
+Test de calibració de la temperatura òpitma d'impressió.
+S'empra un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
 
 ```
 🔅 Es recomana el seu us cada vegada que emprem un nou material.
 ```
 
-
-<h3>Impressora</h3>
-
+## Impressora
 
 Aquesta prova es realitza emprant la impressora [Prusa i3 MK3S+](https://www.prusa3d.com/es/categoria/original-prusa-i3-mk3s/).
 
-<h3>Model STL</h3>
-
+## Model
 
 **Plataforma**: [Printables.com: 3D model database](#bookmark=id.u12klh5vmi5h)
 
-**Objecte 3D**: [Temperature tower](https://www.printables.com/model/316034-temperature-tower) _(material PLA)_
+**Objecte 3D**: Temperature tower PLA [web](https://www.printables.com/model/316034-temperature-tower), [stl](calibrate/models/SmartTemperatureTower_PLA_190-225.stl)
 
-<h3>Material</h3>
+## Material
 
 
 S’usa aquest filament per la prova de torre de temperatura:
