@@ -25,7 +25,7 @@ image::/icons/web_128.png[Temperature tower PLA]
 
 ## Material
 
-
+image::images/image3.jpg
 S’usa aquest filament per la prova de torre de temperatura:
 .Table Title
 |===
