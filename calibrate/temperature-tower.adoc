@@ -25,56 +25,29 @@ image::/icons/web_128.png[Temperature tower PLA]
 
 ## Material
 
-image::images/image3.jpg
+image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
+
 S’usa aquest filament per la prova de torre de temperatura:
-.Table Title
+
 |===
 |Característiques |Filament
 
-|*Model*: Basic, *Color*: Bambu Green (10501), *Marca*: Bambu Lab, *Temperatura*: 195-230ºC, https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452[Web]
-|image::images/image3.jpg
+|*Model*: Basic
+
+*Color*: Bambu Green (10501)
+
+*Marca*: Bambu Lab
+
+*Temperatura*: 195-230ºC
+
+https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452[Web]
+| ToDO: Posar imatge
 
 |===
 
-<table>
-  <tr>
-   <td><strong></strong>
-   </td>
-   <td><strong>Filament</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tipus</strong>: PLA Basic
-<p>
-<strong>
-<p>
-<strong></strong>: 
-<p>
-<strong></strong>: 
-<p>
-<strong></strong>: 
-<p>
-<a href="
-   </td>
-   <td>
+### Configuració
 
-
-
-< alt="alt_text" title="image_tooltip">
-
-   </td>
-  </tr>
-</table>
-
-
-<h3>Configuració</h3>
-
-
-Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
-
-Els paràmetres:
-
-
+Els paràmetres base:
 
 * **Temperatura**: L'escrita en el primer esglaó de la torre a imprimir.
 * **Cabal**: 100%
@@ -84,23 +57,20 @@ Els paràmetres:
 
 El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
 
-<h4>_Cas d’ús: PrusaSlicer_</h4>
+TIP: Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir. En cas de SuperSlicer ho fa el mateix programa a partir de les seves proves de calibració.
 
+#### Cas d’ús: PrusaSlicer
 
-Pas 1: Afegim el model de la torre i ajustem els paràmetres (veure 
+_Pas 1_: Afegim el model de la torre i ajustem els paràmetres (veure <<Configuració>>).
 
-[configuració](#heading=h.mumsqpljsap7)).
+_Pas 2_: Seguidament fem *Laminar*.
 
-Pas 2: Seguidament fem _Laminar_.
-
-Pas 3: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temperatura)_**. 
+_Pas 3_: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temperatura)_**. 
 
 Ens posicionem en la capa de canvi de bloc, per exemple, en la imatge següent el bloc es el de la temperatura 205 ºC, per rant el següent és el de 200 ºC de temperatura. Fem clic amb el botó dret i seleccionem _Afegir codi G personalitzat_.
 
+image::/calibrate/images/image1.png["Bambu Green (10501)"]
 
-
-
-![alt_text](calibrate/images/image1.png "image_tooltip")
 
 
 Introduim el gcode **_M104 S200_**, per indicar que la temperatura serà de 200 ºC.
