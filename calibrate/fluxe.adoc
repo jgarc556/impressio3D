@@ -1,7 +1,13 @@
-## Torre de temperatura
+## Fluxe
 
-Test de calibració de la temperatura òpitma d'impressió.  
-S'empra un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
+Test de calibració de la quantitat de filament exacta que surt pel nostre nozzle sobretot en impressions dinàmiques.
+
+Impressió d’uns objectes que estàn impressos ajustant més o menys el fluxe del filament partint d'un punt base, normalment l'1 o 100%.
+
+A partir d'aquí s'han de realitzar dos impressions:
+
+* La primera, amb rang de 10%, per tal d'imprimir entre un 80% i 120%.
+* La segona, un cop hagem decidit el valor que més s'ajusta, realitzar un rang d'un 2%. És a dir si el correcte es un 110% tot i que el 100% també es bastant correcte en l'anterior impressió, ara ajustarem les peces entre un 100-110%.
 
 WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 
@@ -10,10 +16,13 @@ WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
 
 ### Model
+    
+Els dos objectes s'han generat a partir de l'aplicació <<Recursos, SuperSlicer>>.
 
-.Objecte 3D 
-[#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
-image::./icons/stl_128.png[Temperature tower PLA]
+.Objecte 
+[#img-gcode,caption="",link=gcode/Flow calibration_0.2mm_PLA_MK3S_22m.gcode]
+image::/icons/gcode_128.png[Filament Flow Calibration]
+  
 
 .Plataforma
 [#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
@@ -27,18 +36,11 @@ image::/icons/web_128.png[Temperature tower PLA]
 
 
 S’usa aquest filament per la prova de torre de temperatura:
-.Table Title
-|===
-|Característiques |Filament
 
-|*Model*: Basic, *Color*: Bambu Green (10501), *Marca*: Bambu Lab, *Temperatura*: 195-230ºC, https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452[Web]
-|image::images/image3.jpg
-
-|===
 
 <table>
   <tr>
-   <td><strong></strong>
+   <td><strong>Característiques</strong>
    </td>
    <td><strong>Filament</strong>
    </td>
@@ -46,21 +48,21 @@ S’usa aquest filament per la prova de torre de temperatura:
   <tr>
    <td><strong>Tipus</strong>: PLA Basic
 <p>
-<strong>
+<strong>Model</strong>: Basic
 <p>
-<strong></strong>: 
+<strong>Color</strong>: Bambu Green (10501) 
 <p>
-<strong></strong>: 
+<strong>Marca</strong>: Bambu Lab
 <p>
-<strong></strong>: 
+<strong>Temperatura</strong>: 195-230ºC
 <p>
-<a href="
+<a href="https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452">Web</a>
    </td>
    <td>
 
 
 
-< alt="alt_text" title="image_tooltip">
+<img src="calibrate/images/image3.jpg" width="25%" alt="alt_text" title="image_tooltip">
 
    </td>
   </tr>
@@ -160,8 +162,8 @@ Un cop analitzades les imatges de la impressió, el rang amb menys problemes sem
 🔅 És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
 ```
 
+
 ### Recursos
 
-* https://github.com/prusa3d/PrusaSlicer/releases[PrusaSlicer]
 * https://www.prusa3d.com/es/categoria/original-prusa-i3-mk3s/[Prusa i3 MK3S+]
-* https://www.printables.com/[Printables.com: 3D model database]
+* https://github.com/supermerill/SuperSlicer[SuperSlicer]
