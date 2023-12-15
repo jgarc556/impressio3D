@@ -24,17 +24,10 @@ Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
 [#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
 image::/icons/stl_128.png[Temperature tower PLA]
 
-.Plataforma
-[#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
-image::/icons/web_128.png[Temperature tower PLA]
-
-**Plataforma**: [Printables.com: 3D model database](#bookmark=id.u12klh5vmi5h)
-
-**Objecte 3D**: [web](https://www.printables.com/model/316034-temperature-tower), [stl](calibrate/models/SmartTemperatureTower_PLA_190-225.stl)
+.Web
+NOTE: https://www.printables.com/model/316034-temperature-tower[Torre original]
 
 ## Material
-
-image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 
 S’usa aquest filament per la prova de torre de temperatura:
 
@@ -50,7 +43,7 @@ S’usa aquest filament per la prova de torre de temperatura:
 *Temperatura*: 195-230ºC
 
 https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452[Web]
-| ToDO: Posar imatge
+a| image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 
 |===
 
@@ -66,7 +59,7 @@ Els paràmetres base:
 
 El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
 
-TIP: Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
+TIP: Si emprem <<Recursos, PrusaSlicer>> o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
 
 #### Cas d’ús: PrusaSlicer
 
