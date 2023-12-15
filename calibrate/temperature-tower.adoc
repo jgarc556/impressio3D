@@ -13,7 +13,7 @@ Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
 
 .Objecte 3D 
 [#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
-image::./icons/stl_128.png[Temperature tower PLA]
+image::/icons/stl_128.png[Temperature tower PLA]
 
 .Plataforma
 [#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
