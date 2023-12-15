@@ -3,6 +3,15 @@
 Test de calibració de la temperatura òpitma d'impressió.  
 S'empra un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
 
+Una vegada que la torre de temperatura ha acabat d'imprimir, observem els diferents passos amb èmfasis en les següents punts:
+
+* **Ponts**: forat central de la peça.
+* **Voladissos de 15, 30 i 60 graus**: costat esquerra de la peça.
+* **Zones arrodonides i petites retraccions**: costat dret de la peça.
+* **Nombres**
+
+Després d'analitzar tots els esglaons, seleccionem el que millor s'adapta a aquestes situacions i la temperatura indicada en ell serà la temperatura òptima per al material analitzat.
+
 WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 
 ### Impressora
@@ -57,7 +66,7 @@ Els paràmetres base:
 
 El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
 
-TIP: Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir. En cas de SuperSlicer ho fa el mateix programa a partir de les seves proves de calibració.
+TIP: Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
 
 #### Cas d’ús: PrusaSlicer
 
@@ -69,66 +78,29 @@ _Pas 3_: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temper
 
 Ens posicionem en la capa de canvi de bloc, per exemple, en la imatge següent el bloc es el de la temperatura 205 ºC, per rant el següent és el de 200 ºC de temperatura. Fem clic amb el botó dret i seleccionem _Afegir codi G personalitzat_.
 
-image::/calibrate/images/image1.png["Bambu Green (10501)"]
-
-
+image::/calibrate/images/image1.png["Afegir codi G personalitzat a 200 ºC"]
 
 Introduim el gcode **_M104 S200_**, per indicar que la temperatura serà de 200 ºC.
 
-
-
-
-![alt_text](calibrate/images/image2.png "image_tooltip")
-
+image::/calibrate/images/image2.png["M104 S200"]
 
 Finalment, obtenim el canvi de totes les temperatures.
 
-
-
-![alt_text](calibrate/images/image5.png "image_tooltip")
-
+image::/calibrate/images/image5.png["Temperatures de la torre"]
 
 Només queda fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
+TIP: L'eina SuperSlicer genera una torre de termperatura automàticament per imprimir a partir del seu menú de calibració.
 
-```
-🔅 L'eina SuperSlicer genera una torre de termperatura automàticament per imprimir.
-```
-
-
-<h3>Resultat</h3>
-
-
-Una vegada que la torre de temperatura ha acabat d'imprimir, observem els diferents passos amb èmfasis en les següents preguntes _([imatge anterior](#bookmark=id.k4gskpg31e39))_:
-
-
-
-* **Ponts**: forat central de la peça.
-* **Voladissos de 15, 30 i 60 graus**: costat esquerra de la peça.
-* **Zones arrodonides i petites retraccions**: costat dret de la peça.
-* **Nombres**
-
-Després d'analitzar tots els esglaons, seleccionem el que millor s'adapta a aquestes situacions i la temperatura indicada en ell serà la temperatura òptima per al material analitzat.
-
-<h4>_Cas d’ús_</h4>
-
+#### Resultats
 
 Un cop analitzades les imatges de la impressió, el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de _pont_, ni _voladissos_, ni_ arrodoniments_  ni en els _nombres_, només hi ha petits filaments**_ (Stringing)_** degut a la retroacció que haurem d’ajustar en properes calibracions.
 
+image::/calibrate/images/image4.jpg[]
 
+image::/calibrate/images/image6.jpg[]
 
-
-![alt_text](calibrate/images/image4.jpg "image_tooltip")
-
-
-
-![alt_text](calibrate/images/image6.jpg "image_tooltip")
-
-
-
-```
-🔅 És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
-```
+CAUTION: És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
 
 ### Recursos
 
