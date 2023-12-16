@@ -17,7 +17,7 @@ Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
 
 ### Model
     
-Els dos objectes s'han generat a partir de l'aplicació <<Recursos, SuperSlicer>>. Per tant, s'han posat els gcode generats segons les proves necessaries de calibració d0aquest test.
+Els dos objectes s'han generat a partir de l'aplicació <<Recursos, SuperSlicer>>. Per tant, s'han posat els gcode generats segons les proves necessaries de calibració d'aquest test.
 
 [cols="1a,1a"]
 [frame=none, grid=none]
@@ -62,17 +62,12 @@ Els paràmetres base:
 * **Perímetre**: 2 o 3
 * **Farciment**: 5 o 10% (el patró és indiferent)
 
+#### Cas d’ús: PrusaSlicer
 
-El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
+_Pas 1_: Afegim el model a partir del menú *Calibration*, seleccionant *Filament Flow calibration*.
+i ajustem els paràmetres (veure <<Configuració>>).
 
-<h4>_Cas d’ús: PrusaSlicer_</h4>
-
-
-Pas 1: Afegim el model de la torre i ajustem els paràmetres (veure 
-
-[configuració](#heading=h.mumsqpljsap7)).
-
-Pas 2: Seguidament fem _Laminar_.
+_Pas 2_: ajustem els paràmetres (veure <<Configuració>>).
 
 Pas 3: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temperatura)_**. 
 
