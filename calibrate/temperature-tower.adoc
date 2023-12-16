@@ -75,7 +75,7 @@ image::/calibrate/images/image1.png["Afegir codi G personalitzat a 200 ºC"]
 
 Introduim el gcode **_M104 S200_**, per indicar que la temperatura serà de 200 ºC.
 
-image::/calibrate/images/image2.png["M104 S200"]
+image::/calibrate/images/image2.png["M104 S200",float="right",align="center"]
 
 Finalment, obtenim el canvi de totes les temperatures.
 
