@@ -2,12 +2,12 @@
 
 Test de calibració de la quantitat de filament exacta que surt pel nostre nozzle sobretot en impressions dinàmiques.
 
-Impressió d’uns objectes que estàn impressos ajustant més o menys el fluxe del filament partint d'un punt base, normalment l'1 o 100%.
+Impressió d’uns objectes que estàn impressos ajustant més o menys el fluxe del filament partint d'un valor base d'extrusió, normalment l'1 o 100%.
 
 A partir d'aquí s'han de realitzar dos impressions:
 
-* La primera, amb rang de 10%, per tal d'imprimir entre un 80% i 120%.
-* La segona, un cop hagem decidit el valor que més s'ajusta, realitzar un rang d'un 2%. És a dir si el correcte es un 110% tot i que el 100% també es bastant correcte en l'anterior impressió, ara ajustarem les peces entre un 100-110%.
+* La primera, amb rang de 10%, per tal d'imprimir entre un 80% i 120% de fluxe d'extrusió.
+* La segona, un cop hagem decidit el valor que més s'ajusta, realitzar un rang d'un 2%. És a dir si el correcte es un 110% tot i que el 100% també es bastant correcte en l'anterior impressió, ajustarem les peces entre un 100-110% i tornarem a imprimir.
 
 WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 
@@ -17,20 +17,20 @@ Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
 
 ### Model
     
-Els dos objectes s'han generat a partir de l'aplicació <<Recursos, SuperSlicer>>.
+Els dos objectes s'han generat a partir de l'aplicació <<Recursos, SuperSlicer>>. Per tant, s'han posat els gcode generats segons les proves necessaries de calibració d0aquest test.
 
-.Objecte 
-[#img-gcode,caption="",link=gcode/Flow calibration_0.2mm_PLA_MK3S_22m.gcode]
+[cols="1a,1a"]
+[frame=none, grid=none]
+|===
+|
+.GCode 80-120%
+[#img-gcode,caption="",link="gcode/Flow calibration_0.2mm_PLA_MK3S_22m.gcode"]
+image::/icons/gcode_128.png[Filament Flow Calibration] 
+| 
+.GCode 100-110%
+[#img-gcode2,caption="",link="gcode/Flow calibration_0.2mm_PLA_MK3S_22m-2.gcode"]
 image::/icons/gcode_128.png[Filament Flow Calibration]
-  
-
-.Plataforma
-[#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
-image::/icons/web_128.png[Temperature tower PLA]
-
-**Plataforma**: [Printables.com: 3D model database](#bookmark=id.u12klh5vmi5h)
-
-**Objecte 3D**: [web](https://www.printables.com/model/316034-temperature-tower), [stl](calibrate/models/SmartTemperatureTower_PLA_190-225.stl)
+|===
 
 ## Material
 
