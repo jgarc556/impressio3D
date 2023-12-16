@@ -52,7 +52,7 @@ a| image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 Els paràmetres base:
 
 * **Temperatura**: L'escrita en el primer esglaó de la torre a imprimir.
-* **Cabal**: 100%
+* **Cabal**: 1 (o 100%)
 * **Altura de la capa**: 0,2 mm
 * **Perímetre**: 2 o 3
 * **Farciment**: 5 o 10% (el patró és indiferent)
