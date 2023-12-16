@@ -34,55 +34,34 @@ image::/icons/gcode_128.png[Filament Flow Calibration]
 
 ## Material
 
-
 S’usa aquest filament per la prova de torre de temperatura:
 
+|===
+|Característiques |Filament
 
-<table>
-  <tr>
-   <td><strong>Característiques</strong>
-   </td>
-   <td><strong>Filament</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tipus</strong>: PLA Basic
-<p>
-<strong>Model</strong>: Basic
-<p>
-<strong>Color</strong>: Bambu Green (10501) 
-<p>
-<strong>Marca</strong>: Bambu Lab
-<p>
-<strong>Temperatura</strong>: 195-230ºC
-<p>
-<a href="https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452">Web</a>
-   </td>
-   <td>
+|*Model*: Basic
 
+*Color*: Bambu Green (10501)
 
+*Marca*: Bambu Lab
 
-<img src="calibrate/images/image3.jpg" width="25%" alt="alt_text" title="image_tooltip">
+*Temperatura*: 195-230ºC
 
-   </td>
-  </tr>
-</table>
+https://eu.store.bambulab.com/en-es/products/pla-basic-filament?variant=46673378607452[Web]
+a| image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 
+|===
 
-<h3>Configuració</h3>
+### Configuració
 
+Els paràmetres base:
 
-Si emprem [PrusaSlicer](#bookmark=id.vazuuk5zzkog) o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
-
-Els paràmetres:
-
-
-
-* **Temperatura**: L'escrita en el primer esglaó de la torre a imprimir.
+* **Temperatura**: 200
 * **Cabal**: 100%
 * **Altura de la capa**: 0,2 mm
 * **Perímetre**: 2 o 3
 * **Farciment**: 5 o 10% (el patró és indiferent)
+
 
 El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
 
