@@ -81,7 +81,7 @@ Finalment, obtenim el canvi de totes les temperatures.
 
 image::/calibrate/images/image5.png["Temperatures de la torre"]
 
-Només queda fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
+_Pas 4_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
 TIP: L'eina <<Recursos, SuperSlicer>> genera una torre de termperatura automàticament per imprimir a partir del seu menú de calibració.
 
