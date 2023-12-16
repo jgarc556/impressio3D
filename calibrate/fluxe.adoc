@@ -62,14 +62,20 @@ Els paràmetres base:
 * **Perímetre**: 2 o 3
 * **Farciment**: 5 o 10% (el patró és indiferent)
 
-#### Cas d’ús: PrusaSlicer
+#### Cas d’ús: SuperSlicer
 
-_Pas 1_: Afegim el model a partir del menú *Calibration*, seleccionant *Filament Flow calibration*.
-i ajustem els paràmetres (veure <<Configuració>>).
+_Pas 1_: Ajustem els paràmetres (veure <<Configuració>>).
 
-_Pas 2_: ajustem els paràmetres (veure <<Configuració>>).
+_Pas 2_: Afegim el model a partir del menú *Calibration*, seleccionant *Filament Flow calibration*.
 
-Pas 3: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temperatura)_**. 
+image::/calibrate/images/f_image1.png[]
+
+_Pas 3_: Seleccionem _Generate 10% intervals around current value_ per aconseguir fer les proves de 80-120% de fluxe de filamebt.
+
+image::/calibrate/images/f_image2.png[]
+
+_Pas 4_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
+
 
 Ens posicionem en la capa de canvi de bloc, per exemple, en la imatge següent el bloc es el de la temperatura 205 ºC, per rant el següent és el de 200 ºC de temperatura. Fem clic amb el botó dret i seleccionem _Afegir codi G personalitzat_.
 
