@@ -57,7 +57,7 @@ a| image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 Els paràmetres base:
 
 * **Temperatura**: 200
-* **Cabal**: 100%
+* **Cabal**: 1 (o 100%)
 * **Altura de la capa**: 0,2 mm
 * **Perímetre**: 2 o 3
 * **Farciment**: 5 o 10% (el patró és indiferent)
@@ -70,77 +70,30 @@ _Pas 2_: Afegim el model a partir del menú *Calibration*, seleccionant *Filamen
 
 image::/calibrate/images/f_image1.png[]
 
-_Pas 3_: Seleccionem _Generate 10% intervals around current value_ per aconseguir fer les proves de 80-120% de fluxe de filamebt.
+_Pas 3_: Seleccionem _Generate 10% intervals around current value_ per aconseguir fer les proves de 80-120% de fluxe de filamemt.
 
 image::/calibrate/images/f_image2.png[]
 
 _Pas 4_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
+Observem que el +10 es la impressió que no crea buits a la superfície superior. Per tant, necessitem canviar el fluxe d'extrucció d'1 a 1.1.
 
-Ens posicionem en la capa de canvi de bloc, per exemple, en la imatge següent el bloc es el de la temperatura 205 ºC, per rant el següent és el de 200 ºC de temperatura. Fem clic amb el botó dret i seleccionem _Afegir codi G personalitzat_.
+image::/calibrate/images/f_image3.png[]
 
+_Pas 5_: Ajustem els paràmetres:.
 
+* **Cabal**: 1,1 (o 110%)
 
+_Pas 6_: Afegim el model a partir del menú *Calibration*, seleccionant *Filament Flow calibration* per realitzar el segon test.
 
-![alt_text](calibrate/images/image1.png "image_tooltip")
+_Pas 7_: Seleccionem _Generate 2% intervals below current value_ per aconseguir fer les proves de 100-110% de fluxe de filament.
 
+image::/calibrate/images/f_image4.png[]
 
-Introduim el gcode **_M104 S200_**, per indicar que la temperatura serà de 200 ºC.
+_Pas 8_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
+#### Resultats
 
-
-
-![alt_text](calibrate/images/image2.png "image_tooltip")
-
-
-Finalment, obtenim el canvi de totes les temperatures.
-
-
-
-![alt_text](calibrate/images/image5.png "image_tooltip")
-
-
-Només queda fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
-
-
-```
-🔅 L'eina SuperSlicer genera una torre de termperatura automàticament per imprimir.
-```
-
-
-<h3>Resultat</h3>
-
-
-Una vegada que la torre de temperatura ha acabat d'imprimir, observem els diferents passos amb èmfasis en les següents preguntes _([imatge anterior](#bookmark=id.k4gskpg31e39))_:
-
-
-
-* **Ponts**: forat central de la peça.
-* **Voladissos de 15, 30 i 60 graus**: costat esquerra de la peça.
-* **Zones arrodonides i petites retraccions**: costat dret de la peça.
-* **Nombres**
-
-Després d'analitzar tots els esglaons, seleccionem el que millor s'adapta a aquestes situacions i la temperatura indicada en ell serà la temperatura òptima per al material analitzat.
-
-<h4>_Cas d’ús_</h4>
-
-
-Un cop analitzades les imatges de la impressió, el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de _pont_, ni _voladissos_, ni_ arrodoniments_  ni en els _nombres_, només hi ha petits filaments**_ (Stringing)_** degut a la retroacció que haurem d’ajustar en properes calibracions.
-
-
-
-
-![alt_text](calibrate/images/image4.jpg "image_tooltip")
-
-
-
-![alt_text](calibrate/images/image6.jpg "image_tooltip")
-
-
-
-```
-🔅 És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
-```
 
 
 ### Recursos
