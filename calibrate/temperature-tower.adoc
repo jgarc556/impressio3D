@@ -87,14 +87,13 @@ TIP: L'eina SuperSlicer genera una torre de termperatura automàticament per imp
 
 #### Resultats
 
-Un cop analitzades les imatges de la impressió, el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de _pont_, ni _voladissos_, ni_ arrodoniments_  ni en els _nombres_, només hi ha petits filaments**_ (Stringing)_** degut a la retroacció que haurem d’ajustar en properes calibracions.
+Un cop analitzades les imatges de la impressió, el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de [green]##_pont_##, ni [green]##_voladissos_##, ni [green]##_arrodoniments_##, ni en els [green]##_nombres_##, només hi ha [red]##_petits filaments (Stringing)_## degut a la retroacció que haurem d’ajustar en properes calibracions.
 
 [format=csv, cols="1a,1a"]
 [frame=none, grid=none]
 |===
 image::/calibrate/images/image4.jpg[width=256],image::/calibrate/images/image6.jpg[width=256]
 |===
-
 
 CAUTION: És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
 
