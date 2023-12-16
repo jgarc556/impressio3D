@@ -83,7 +83,7 @@ image::/calibrate/images/image5.png["Temperatures de la torre"]
 
 Només queda fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
-TIP: L'eina SuperSlicer genera una torre de termperatura automàticament per imprimir a partir del seu menú de calibració.
+TIP: L'eina <<Recursos, SuperSlicer>> genera una torre de termperatura automàticament per imprimir a partir del seu menú de calibració.
 
 #### Resultats
 
@@ -102,3 +102,4 @@ CAUTION: És possible que la peça no s'imprimeixi per complet perquè el fusor 
 * https://github.com/prusa3d/PrusaSlicer/releases[PrusaSlicer]
 * https://www.prusa3d.com/es/categoria/original-prusa-i3-mk3s/[Prusa i3 MK3S+]
 * https://www.printables.com/[Printables.com: 3D model database]
+* https://github.com/supermerill/SuperSlicer[SuperSlicer]
