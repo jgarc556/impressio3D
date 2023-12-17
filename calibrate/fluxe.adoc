@@ -102,14 +102,20 @@ _Pas 8_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar e
 
 Un cop analitzades les imatges de la impressió, seleccionarem la peça -2. Per tant, aplicarem la següent formula per determinal el fluxe d'impressió:
 
-Nou cabal = ( (100 + nombre_escollit) / 100 ) * antic_cabal
-És a dir, a parti de les imrpessions:
-* La primera, hem escollit el +10, per tant: ((100+10)/100) * 1 = (1.1) * 1 = 1.1
-* La segona, hem escollit -2, llavors apliquem ((100-2)/100) * 1.1 = 1.078
-
-El nou cabal d'impressió és 1,8 (o 1,078).  el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de pont, ni voladissos, ni arrodoniments, ni en els nombres, només hi ha petits filaments (Stringing) degut a la retroacció que haurem d’ajustar en properes calibracions.
-
 image::/calibrate/images/f_image8.jpg[]
+
+----
+Nou cabal = ( (100 + nombre_escollit) / 100 ) * antic_cabal
+----
+
+És a dir, a parti de les impressions:
+
+* La primera, hem escollit el +10, per tant, ((100+10)/100) * 1 = (1.1) * 1 = *1.1*
+* La segona, hem escollit -2, llavors apliquem ((100-2)/100) * 1.1 = *1.078*
+
+El nou cabal d'impressió és *1,08* (o 1,078). Apliquem la configuració per aconseguir millorar les impressions.
+
+image::/calibrate/images/f_image9.png[]
 
 ### Recursos
 
