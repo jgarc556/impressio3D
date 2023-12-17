@@ -76,24 +76,31 @@ image::/calibrate/images/f_image2.png[]
 
 _Pas 4_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
+image::/calibrate/images/f_image3.jpg[]
+
 Observem que el +10 es la impressió que no crea buits a la superfície superior. Per tant, necessitem canviar el fluxe d'extrucció d'1 a 1.1.
 
-image::/calibrate/images/f_image3.png[]
+image::/calibrate/images/f_image4.jpg[]
 
-_Pas 5_: Ajustem els paràmetres:.
+image::/calibrate/images/f_image5.jpg[]
+
+_Pas 5_: Ajustem els paràmetres:
 
 * **Cabal**: 1,1 (o 110%)
+
+image::/calibrate/images/f_image6.png[]
 
 _Pas 6_: Afegim el model a partir del menú *Calibration*, seleccionant *Filament Flow calibration* per realitzar el segon test.
 
 _Pas 7_: Seleccionem _Generate 2% intervals below current value_ per aconseguir fer les proves de 100-110% de fluxe de filament.
 
-image::/calibrate/images/f_image4.png[]
+image::/calibrate/images/f_image7.png[]
 
 _Pas 8_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar el test.
 
 #### Resultats
 
+image::/calibrate/images/f_image8.jpg[]
 
 
 ### Recursos
