@@ -100,9 +100,11 @@ _Pas 8_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar e
 
 #### Resultats
 
-Un cop analitzades les imatges de la impressió, seleccionarem la peça -2. Per tant, aplicarem la següent formula per determinal el fluxe d'impressió:
+Un cop analitzades les imatges de la impressió, seleccionarem la peça -2.
 
 image::/calibrate/images/f_image8.jpg[]
+
+Per tant, aplicarem la següent formula per determinal el fluxe d'impressió:
 
 ----
 Nou cabal = ( (100 + nombre_escollit) / 100 ) * antic_cabal
@@ -113,7 +115,12 @@ Nou cabal = ( (100 + nombre_escollit) / 100 ) * antic_cabal
 * La primera, hem escollit el +10, per tant, ((100+10)/100) * 1 = (1.1) * 1 = *1.1*
 * La segona, hem escollit -2, llavors apliquem ((100-2)/100) * 1.1 = *1.078*
 
-El nou cabal d'impressió és *1,08* (o 1,078). Apliquem la configuració per aconseguir millorar les impressions.
+.Fluxe final
+****
+El nou cabal d'impressió és *1,08* (o 1,078).
+****
+
+Apliquem la configuració per aconseguir millorar les impressions.
 
 image::/calibrate/images/f_image9.png[]
 
