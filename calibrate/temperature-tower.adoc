@@ -1,4 +1,4 @@
-## Torre de temperatura
+# Torre de temperatura
 
 Test de calibració de la temperatura òpitma d'impressió.  
 S'empra un objecte amb aspecte de torre on cada bloc s’imprimirà amb una temperatura diferent, és a dir, comemcem amb una temperatura màxima d’impressió i l’anem descendint cada 5 graus per comprobar la temperatura l’extrusió d’un material.
@@ -14,27 +14,34 @@ Després d'analitzar tots els esglaons, seleccionem el que millor s'adapta a aqu
 
 WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 
-### Impressora
+### Configuració
 
-Aquesta prova es realitza emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
+Els paràmetres base:
 
-### Model
+* **Temperatura**: L'escrita en el primer esglaó de la torre a imprimir.
+* **Cabal**: 1 (o 100%)
+* **Altura de la capa**: 0,2 mm
+* **Perímetre**: 2 o 3
+* **Farciment**: 5 o 10% (el patró és indiferent)
 
-.Objecte 3D 
-[#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
-image::/icons/stl_128.png[Temperature tower PLA]
+El rang de temperatures que pot imprimir-se el filament la marca el fabricant, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
 
-.Web
-NOTE: https://www.printables.com/model/316034-temperature-tower[Torre original]
+TIP: Si emprem <<Recursos, PrusaSlicer>> o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
 
-## Material
+## Impressora: Prusa i3 MK3S+
+
+Les proves per ajustar la temperatura dels filaments s'han fet emprant la impressora <<Recursos, Prusa i3 MK3S+>>.
+
+### Filament: Bambu Lab Basic (PLA)
 
 S’usa aquest filament per la prova de torre de temperatura:
 
 |===
 |Característiques |Filament
 
-|*Model*: Basic
+|*Tipus*: PLA
+
+*Model*: Basic
 
 *Color*: Bambu Green (10501)
 
@@ -47,25 +54,22 @@ a| image::/calibrate/images/image3.jpg["Bambu Green (10501)",width=128]
 
 |===
 
-### Configuració
-
-Els paràmetres base:
-
-* **Temperatura**: L'escrita en el primer esglaó de la torre a imprimir.
-* **Cabal**: 1 (o 100%)
-* **Altura de la capa**: 0,2 mm
-* **Perímetre**: 2 o 3
-* **Farciment**: 5 o 10% (el patró és indiferent)
-
-El rang de temperatures de la torre serà 190-225 ºC, per tant, haurem d’ajustar les capes inicials de cada bloc amb una diferencia de 5º C, començant per la temperatura més alta i a mesura que la torre creix, anirem baixant la temperatura.
-
-TIP: Si emprem <<Recursos, PrusaSlicer>> o Cura necessitarem indicar a cada capa d’inici del bloc la temperatura que volem imprimir.
-
 #### Cas d’ús: PrusaSlicer
 
-_Pas 1_: Afegim el model de la torre i ajustem els paràmetres (veure <<Configuració>>).
+_Pas 1_: Escollim un model de torre de temperatura en algun portal d'objectes 3D.
 
-_Pas 2_: Seguidament fem *Laminar*.
+.Objecte 3D 
+[#img-stl,caption="",link=http://models/SmartTemperatureTower_PLA_190-225.stl]
+image::/icons/stl_128.png[Temperature tower PLA]
+
+.Web
+NOTE: https://www.printables.com/model/316034-temperature-tower[Torre original]
+
+_Pas 2_: Afegim el model de la torre i ajustem els paràmetres (veure <<Configuració>>). Aquest model va de 190-225 ºC (tot i que el nostre material accepta 230, no es habitual imprimir amb aquesta temperatura, per tant, caldrà modificar els paràmetres base:
+
+* **Temperatura**: 225.
+
+_Pas 3_: Seguidament fem *Laminar*.
 
 _Pas 3_: Ara, indiquem la temperatura de cada bloc amb el gcode **_M104 S(Temperatura)_**. 
 
@@ -85,7 +89,7 @@ _Pas 4_: Fer clic a _Exportar el codi G_ i realitzar la impressió per avaluar e
 
 TIP: L'eina <<Recursos, SuperSlicer>> genera una torre de termperatura automàticament per imprimir a partir del seu menú de calibració.
 
-#### Resultats
+##### Resultats
 
 Un cop analitzades les imatges de la impressió, el rang amb menys problemes sembla de 190-205 ºC de temperatura, esent el valor de 200 ºC la tempreatura ideal per aquest filament, ja que no s’aprecien problemes de [green]##_pont_##, ni [green]##_voladissos_##, ni [green]##_arrodoniments_##, ni en els [green]##_nombres_##, només hi ha [red]##_petits filaments (Stringing)_## degut a la retroacció que haurem d’ajustar en properes calibracions.
 
@@ -97,7 +101,7 @@ image::/calibrate/images/image4.jpg[width=256],image::/calibrate/images/image6.j
 
 CAUTION: És possible que la peça no s'imprimeixi per complet perquè el fusor està embussat a causa de la baixa temperatura. Si això succeeix, detingui la impressió i analitzi la part incompleta de la mateixa manera.
 
-### Recursos
+## Recursos
 
 * https://github.com/prusa3d/PrusaSlicer/releases[PrusaSlicer]
 * https://www.prusa3d.com/es/categoria/original-prusa-i3-mk3s/[Prusa i3 MK3S+]
