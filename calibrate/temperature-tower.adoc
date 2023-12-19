@@ -14,7 +14,7 @@ Després d'analitzar tots els esglaons, seleccionem el que millor s'adapta a aqu
 
 WARNING: Es recomana el seu us cada vegada que emprem un nou material.
 
-### Configuració
+## Configuració
 
 Els paràmetres base:
 
